@@ -1,6 +1,6 @@
 /**
  * Dummy React Native App
- * https://github.com/facebook/react-native
+ * https://github.com/zubairKhan-dev/dummy_app.git
  */
 
 import React from 'react';
