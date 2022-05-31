@@ -31,7 +31,7 @@ export default Header
 
 const styles= StyleSheet.create({
     container : {
-        height: hp(10),
+        height: hp(20),
         width: wp(100),
         backgroundColor: theme.PRIMARY_COLOR,
         position: 'absolute',
@@ -41,7 +41,10 @@ const styles= StyleSheet.create({
     },
     title : {
         fontSize: theme.LARGE_FONTS,
-        fontWeight: 'bold',
-        color: theme.White
+        fontWeight: '500',
+        color: theme.WHITE,
+        wordWrap: 'breakWord',
+        width: wp(90),
+        textAlign: 'center'
     }
 })
