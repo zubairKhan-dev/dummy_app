@@ -1,4 +1,4 @@
-/* contact-list-screen */
+/* restaurants-list-screen */
 
 import React, { useState } from 'react';
 import {View, Text, FlatList, Button, TextInput, Image} from 'react-native';
@@ -115,15 +115,15 @@ const ListScreen= (props)=> {
                         setMaxValue(e) // setting maximum distance input
                     }} 
                     value= {maxValue}
-                    placeholder={'Search'}
+                    placeholder={'🔍 Search'}
                 />
             </View>
             {/* list rendering view */}
             <View style= {styles.listView}>
                 <Text style={styles.subHeading}>Enter maximum range in km</Text>
                 <FlatList 
-                    data={data.sort((a, b) => a.organization.localeCompare(b.organization))}
-                    extraData={data.sort((a, b) => a.organization.localeCompare(b.organization))}
+                    data={data.sort((a, b) => a.organization.localeCompare(b.organization))} // sorted data
+                    extraData={data.sort((a, b) => a.organization.localeCompare(b.organization))} // sorted extra data
                     renderItem={maxValue.length > 0 ? renderItem : renderList}
                 />
             </View>

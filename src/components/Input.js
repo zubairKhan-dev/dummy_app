@@ -1,3 +1,5 @@
+/* search-input-component */
+
 import React from 'react'
 import {  View, StyleSheet, Dimensions , TextInput } from 'react-native'
 import theme from '../util/theme';
@@ -36,17 +38,20 @@ export default Input
 
 const styles= StyleSheet.create({
     input : {
-        height: hp(10),
+        height: hp(8),
         width: wp(80),
         elevation: 3,
         shadowColor: '#808080',
         shadowOffset: {width: 0, height: 0},
         shadowOpacity: 0.3,
         shadowRadius: 3,
-        borderRadius: 15,
+        borderRadius: hp(4),
         backgroundColor: theme.WHITE,
         padding: 20,
         fontSize: theme.MEDIUM_FONTS,
-        fontStyle: theme.DEFAULT_FONT
+        fontFamily: theme.DEFAULT_FONT,
+        letterSpacing: 1,
+        fontWeight: '500'
+    
     }
 })

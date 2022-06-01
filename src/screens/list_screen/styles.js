@@ -19,22 +19,21 @@ function hp(percentage) {
 
 const styles= StyleSheet.create({
     container : {
-        backgroundColor: theme.WHITE,
-        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        height: hp(100),
+        width: wp(100)
     },
     listView : {
         position: 'absolute',
-        top: hp(30),
+        top: hp(29),
         width: '100%',
-        height: hp(70),
+        height: hp(71),
         alignItems: 'center',
-        backgroundColor: theme.OFF_WHITE
     },
     inputView : {
         position: 'absolute',
-        top: hp(20),
+        top: hp(21),
         width: wp(100),
         flexDirection: 'row',
         alignItems: 'center',
@@ -43,12 +42,13 @@ const styles= StyleSheet.create({
     subHeading : {
         wordWrap: 'breakWord',
         width: wp(90),
-        fontSize: theme.MEDIUM_FONTS,
-        fontWeight: 'bold',
-        textTransform: 'capitalize',
+        fontSize: 14,
+        fontWeight: '600',
         textAlign: 'center',
-        paddingTop: 10,
-        fontFamily: theme.DEFAULT_FONT
+        padding: 10,
+        fontFamily: theme.DEFAULT_FONT,
+        color: 'gray',
+        letterSpacing: 0.5
     },
     icon : {
         height: 15,

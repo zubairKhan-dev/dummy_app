@@ -1,3 +1,5 @@
+/* header */
+
 import React from 'react'
 import {View, Text, StyleSheet, Dimensions, ImageBackground} from 'react-native'
 import theme from '../util/theme';
@@ -15,8 +17,6 @@ function hp(percentage) {
     const value = (percentage * viewportHeight) / 100;
     return Math.round(value);
 }
-
-/* Header */
 
 const Header = (props) => {
 
@@ -37,7 +37,6 @@ const styles= StyleSheet.create({
     container : {
         height: hp(25),
         width: wp(100),
-        backgroundColor: theme.PRIMARY_COLOR,
         position: 'absolute',
         top: 0,
         alignItems: 'center',
